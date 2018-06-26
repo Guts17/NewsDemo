@@ -1,0 +1,38 @@
+<html>
+<body>
+<div id="youkuplayer" style="width:320px;height:240px"></div>
+<script type="text/javascript" src="http://player.youku.com/jsapi"></script>
+<script type="text/javascript">
+var player = new YKU.Player('youkuplayer',{
+styleid: '0',
+client_id: 'd905bda2b3214a11',
+vid: 'videoID',
+newPlayer: true,
+autoplay: true,
+show_related: true,
+events:{
+onPlayerReady: function(){ /*your code*/ },
+onPlayStart: function(){ /*your code*/ },
+onPlayEnd: function(){ /*your code*/ }
+}
+});
+function setTitle(arg){
+document.getElementById("title").innerHTML = arg;
+}
+function playVideo(){
+player.playVideo();
+}
+function pauseVideo(){
+player.pauseVideo();
+}
+function seekTo(s){
+player.seekTo(s);
+}
+function currentTime(){
+return player.currentTime();
+}
+</script>
+</body>
+</html>
+
+

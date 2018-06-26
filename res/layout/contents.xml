@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+    
+    <ScrollView 
+        android:id="@+id/scl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        
+    <TextView 
+        android:id="@+id/contents"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+        
+    </ScrollView>
+    
+    <LinearLayout 
+        android:id="@+id/pl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+    
+        <EditText 
+            android:id="@+id/comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请输入评论..."/>
+        
+        <Button
+        android:id="@+id/report"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发表" />
+        
+    </LinearLayout>
+
+    
+
+</RelativeLayout>
